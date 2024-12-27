@@ -1,10 +1,24 @@
-/* Your CSS code here. */
-#flip {
-  width: 100%;
-  height: auto;
-  transition: all 0.3s ease; /* Smooth transition for image change */
+.image-container {
+  position: relative;
+  display: inline-block;
 }
 
-#flip:hover {
-  content: url('https://live.staticflickr.com/8138/29099429912_0659caf55b_b.jpg');
+.image {
+  width: 100%;
+  height: auto;
 }
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+	
