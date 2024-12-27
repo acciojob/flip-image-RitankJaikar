@@ -1,6 +1,8 @@
+/* Your CSS code here. */
 #flip {
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-  transition: background-image 0.3s ease;
+  transition: all 0.3s ease; /* Smooth transition for image change */
+}
+
+#flip:hover {
+  content: url('https://live.staticflickr.com/8138/29099429912_0659caf55b_b.jpg');
 }
