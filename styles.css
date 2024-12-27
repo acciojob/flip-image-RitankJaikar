@@ -1,24 +1,11 @@
-.image-container {
-  position: relative;
-  display: inline-block;
+#flip {
+  width: 100px;
+  height: 100px;
+  background-image: url('https://images.pexels.com/photos/6785279/pexels-photo-6785279.jpeg');
+  background-size: cover;
+  transition: background-image 0.3s ease;
 }
 
-.image {
-  width: 100%;
-  height: auto;
+#flip:hover {
+  background-image: url('https://live.staticflickr.com/8138/29099429912_0659caf55b_b.jpg');
 }
-
-.hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.image-container:hover .hover-image {
-  opacity: 1;
-}
-	
